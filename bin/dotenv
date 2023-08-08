@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/sdani0222/Desktop/Monthly Stateenst Automations/gpt-data-extraction-main 2/llm_app/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from dotenv.__main__ import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())
